@@ -82,8 +82,8 @@ main {
     left: 0;
 }
 
-.img-b:hover {
-    z-index: 1;
+.img-a:hover {
+    z-index: -1;
 }
 
 .heart {
