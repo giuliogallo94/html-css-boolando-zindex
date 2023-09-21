@@ -11,12 +11,18 @@
 /* HEADER */
 header {
     background-color: #ff6900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 60px;
+    z-index: 9999;
 }
 
 /* Nav */
 .navbar {
-    height: 60px;
     width: 75%;
+    height: 60px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -24,15 +30,20 @@ header {
 }
 
 .categories {
-    min-width: 250px;
+    min-width: 33%;
 
 }
-.categories a{
+
+.categories ul {
+    list-style-type: none;
+    display: flex;
+}
+.categories a {
     text-decoration: none;
     color: white;
     font-size: 17px;
     font-weight: bold;
-    margin-right: 3px;
+    margin-right: 5px;
 }
 
 .logo {
@@ -44,7 +55,7 @@ header {
 }
 
 .personal-area {
-    min-width: 250px;
+    min-width: 33%;
     text-align: right;
 }
 .personal-area i {
@@ -54,7 +65,7 @@ header {
 
 /* MAIN */
 main {
-    padding-top: 3rem;
+    padding-top: 5rem;
 }
 .catalogue {
     width: 75%;
@@ -73,7 +84,8 @@ main {
 
 .img-container img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    display: block;
 }
 
 .img-a {
@@ -82,7 +94,7 @@ main {
     left: 0;
 }
 
-.img-a:hover {
+.img-container:hover .img-a {
     z-index: -1;
 }
 
@@ -92,6 +104,11 @@ main {
     position: absolute;
     top: 10px;
     right: 0;
+    cursor: pointer;
+}
+
+.heart:hover span {
+    color: red;
 }
 
 .info {
@@ -121,7 +138,7 @@ main {
     top: 100%;
 }
 
-.details p {
+.details span {
     font-size: 12px;
 }
 
